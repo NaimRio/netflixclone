@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--OWL CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--css flickity-->
+    <link rel="stylesheet" href="style/flickity.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body onload="filmeinicial()">
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="series.html">Séries</a>
+                <a href="filmes.html">Filmes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal" id="fp" style="z-index: 2;">
+            <div class="container" id="fpcont">
+                <h3 class="titulo" id="fpt"></h3>
+                <p class="descricao" id="fpd"></p>
+                <div class="botoes">
+                    <button role="button" class="botao" id="btplay" onclick= "">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" id="btinfo" onclick="">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+<!--
+    <div class="carrosel_filmes" style="z-index: 3;">
+        <div class="owl-carousel owl-theme" style="z-index: 4;">
+            <div class="item" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(00)">
+                    <img class="box-filme" src="img/carrosel/yXrb84zJidCefyhTWHwo4yCDvwz.jpg" alt="" srcset="">
+                </button>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Flickity HTML init -->
+    <div class="carrosel_filmes" style="z-index: 3;">
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(0)">
+                    <img class="box-filme" src="img/carrosel/AlitaBaner.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(2)">
+                    <img class="box-filme" src="img/carrosel/MH.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(4)">
+                    <img class="box-filme" src="img/carrosel/sentinela.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(5)">
+                    <img class="box-filme" src="img/carrosel/ava.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(6)">
+                    <img class="box-filme" src="img/carrosel/tej.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(7)">
+                    <img class="box-filme" src="img/carrosel/vanquish.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(8)">
+                    <img class="box-filme" src="img/carrosel/novaordemespacial.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(10)">
+                    <img class="box-filme" src="img/carrosel/cherry.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(11)">
+                    <img class="box-filme" src="img/carrosel/pontovermelho.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(13)">
+                    <img class="box-filme" src="img/carrosel/yourhonor.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(14)">
+                    <img class="box-filme" src="img/carrosel/22.jpg" alt="" srcset="">
+                </button>
+            </div>
+            <div class="gallery-cell" style="z-index: 5;">
+                <button class="botaocell" onclick="mudapri(15)">
+                    <img class="box-filme" src="img/carrosel/Raya.jpg" alt="" srcset="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <!-- JS Flickity carrosel -->
+    <script src="js/flickity.pkgd.js"></script>
+
+    <!--Icones dos botões-->
+    <script src="https://kit.fontawesome.com/487b6253c0.js" crossorigin="anonymous"></script>
+
+    <!--OWL JS-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>
