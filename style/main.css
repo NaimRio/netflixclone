@@ -24,6 +24,13 @@ header .container{
     justify-content: space-between;
 }
 
+header .container a img{
+    height: 70px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-left: -25px;
+}
+
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
