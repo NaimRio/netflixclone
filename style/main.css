@@ -129,6 +129,52 @@ header nav a:hover{
     transform: scale(1.2); width: 100%; height: 100%; top: 0%; left: 10%; margin-top: 0px;*/
 }
 
+.popup-fundo{
+    margin: auto;
+    width: 1331px;
+    height: 811px;
+    display: none;
+    top: 10%;
+    left: 16%;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 10004;
+    opacity: 1;
+}
+
+.popup-titlebar{
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.popup-title{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.popup-close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.videopopup{
+    display:block;
+    position:absolute;
+    top: 50px;
+    left:0;
+    width:300px;
+    height:200px;
+    border:none;
+}
+
+.trailer-iframe{
+    background-color: #000;
+    display:block;
+}
 /*
 .box-filme{
     height: 100%;

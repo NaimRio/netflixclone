@@ -17,7 +17,7 @@
 
     <title>NETFLIX CLONE</title>
 </head>
-<body onload="filmeinicial()">
+<body onload="filmesinicial()">
     <header>
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
@@ -136,5 +136,19 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+
+    <div class="popup-fundo" id="popupfundo" >
+        <div class="popup-titlebar">
+            <span class="popup-title">Reproduzir trailer</span>
+            <div class="popup-actions">
+                <a role="button" href="#" id="popupClose" class="popup-close" onclick="fechatraile()">
+                    <i class="fas fa-window-close" style="color: white; font-size: 30px ;"></i>
+                </a>
+            </div>
+        </div>
+        <div id="pop" class="videopopup" role="dialog">
+        </div>
+    </div>
+
 </body>
 </html>
