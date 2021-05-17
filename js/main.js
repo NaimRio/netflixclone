@@ -221,7 +221,7 @@ function mudapri(valor){
             titulo.innerHTML = "WANDAVISION";
             descricao.innerHTML = "Wanda Maximoff e Visão, um casal de super-heróis com uma vida perfeita, que começa a suspeitar que nem tudo é o que parece."
             filmefundo.style.backgroundImage = "url('img/destaque/wandavision.jpg')";
-            popupvideo.innerHTML =  '<iframe id="trailer" class="trailer-iframe" type="text/html" width="1331" height="748" src="http://www.youtube.com/embed/fpSvKp_yIIw?" frameborder="0" allowfullscreen=""></iframe>'
+            popupvideo.innerHTML =  '<iframe id="trailer" class="trailer-iframe" tabindex type="text/html" width="1331" height="748" src="http://www.youtube.com/embed/fpSvKp_yIIw?" frameborder="0" allowfullscreen=""></iframe>'
             btplay.onclick = function(){abretraile()};
             btinfo.onclick = function(){window.open("https://www.themoviedb.org/tv/85271-wandavision?language=pt-BR")};
             break;
@@ -230,7 +230,11 @@ function mudapri(valor){
 }
 
 function fechatraile(){
+    var popupvideo = document.getElementById("pop");
+    var temp = popupvideo.innerHTML;
     document.getElementById('popupfundo').style.display='none';
+    popupvideo.innerHTML = "";
+    popupvideo.innerHTML = temp;
 }
 
 function abretraile(){
